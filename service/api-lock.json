@@ -1,0 +1,591 @@
+[
+  {
+    "mods": [
+      {
+        "description": "Credit Query Controller",
+        "interfaces": [
+          {
+            "consumes": [
+              "application/json;charset=UTF-8"
+            ],
+            "description": "往期账单汇总\n往期账单汇总",
+            "name": "postApiCoreAssetCreditQueryPastCreditCardBillGather",
+            "method": "post",
+            "path": "/api/core/asset/credit/query/pastCreditCardBillGather",
+            "response": {
+              "typeArgs": [],
+              "typeName": "DataTransOutput",
+              "isDefsType": true,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "parameters": [
+              {
+                "in": "body",
+                "description": "requestParamVo",
+                "name": "body",
+                "required": true,
+                "dataType": {
+                  "typeArgs": [],
+                  "typeName": "",
+                  "isDefsType": false,
+                  "templateIndex": -1,
+                  "compileTemplateKeyword": "#/definitions/",
+                  "enum": []
+                }
+              }
+            ]
+          },
+          {
+            "consumes": [
+              "application/json;charset=UTF-8"
+            ],
+            "description": "往期账单汇总\n往期账单汇总",
+            "name": "putApiCoreAssetCreditQueryPastCreditCardBillGather",
+            "method": "put",
+            "path": "/api/core/asset/credit/query/pastCreditCardBillGather",
+            "response": {
+              "typeArgs": [],
+              "typeName": "DataTransOutput",
+              "isDefsType": true,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "parameters": [
+              {
+                "in": "body",
+                "description": "requestParamVo",
+                "name": "body",
+                "required": true,
+                "dataType": {
+                  "typeArgs": [],
+                  "typeName": "",
+                  "isDefsType": false,
+                  "templateIndex": -1,
+                  "compileTemplateKeyword": "#/definitions/",
+                  "enum": []
+                }
+              }
+            ]
+          },
+          {
+            "consumes": [
+              "application/json"
+            ],
+            "description": "站址经营-汇总首页",
+            "name": "postZzjyAllMsgGetAllMsgForMap",
+            "method": "post",
+            "path": "/zzjy/all-msg/getAllMsgForMap",
+            "response": {
+              "typeArgs": [
+                {
+                  "typeArgs": [
+                    {
+                      "typeArgs": [],
+                      "typeName": "ObjectMap",
+                      "isDefsType": false,
+                      "templateIndex": -1,
+                      "compileTemplateKeyword": "#/definitions/",
+                      "enum": []
+                    }
+                  ],
+                  "typeName": "Array",
+                  "isDefsType": false,
+                  "templateIndex": -1,
+                  "compileTemplateKeyword": "#/definitions/",
+                  "enum": []
+                }
+              ],
+              "typeName": "Result",
+              "isDefsType": true,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "parameters": [
+              {
+                "in": "query",
+                "description": "accountTime",
+                "name": "accountTime",
+                "required": true,
+                "dataType": {
+                  "typeArgs": [],
+                  "typeName": "string",
+                  "isDefsType": false,
+                  "templateIndex": -1,
+                  "compileTemplateKeyword": "#/definitions/",
+                  "enum": []
+                }
+              },
+              {
+                "in": "query",
+                "description": "type",
+                "name": "type",
+                "required": true,
+                "dataType": {
+                  "typeArgs": [],
+                  "typeName": "string",
+                  "isDefsType": false,
+                  "templateIndex": -1,
+                  "compileTemplateKeyword": "#/definitions/",
+                  "enum": []
+                }
+              }
+            ]
+          },
+          {
+            "consumes": [
+              "application/json"
+            ],
+            "description": "多中划线测试",
+            "name": "postZzjyAllMsgTestMultiDash",
+            "method": "post",
+            "path": "/zzjy/all-msg/test-multi-dash",
+            "response": {
+              "typeArgs": [
+                {
+                  "typeArgs": [
+                    {
+                      "typeArgs": [],
+                      "typeName": "ObjectMap",
+                      "isDefsType": false,
+                      "templateIndex": -1,
+                      "compileTemplateKeyword": "#/definitions/",
+                      "enum": []
+                    }
+                  ],
+                  "typeName": "Array",
+                  "isDefsType": false,
+                  "templateIndex": -1,
+                  "compileTemplateKeyword": "#/definitions/",
+                  "enum": []
+                }
+              ],
+              "typeName": "Result",
+              "isDefsType": true,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "parameters": []
+          }
+        ],
+        "name": "creditQuery"
+      }
+    ],
+    "name": "api",
+    "baseClasses": [
+      {
+        "name": "AbcOutputParameter",
+        "properties": [
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "dueDay",
+            "description": "开卡日",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "requestChannel",
+            "description": "进件渠道",
+            "required": true
+          }
+        ],
+        "templateArgs": []
+      },
+      {
+        "name": "ChineseAndEnglishMixedWithVo",
+        "properties": [
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "dueDay",
+            "description": "开卡日",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "requestChannel",
+            "description": "进件渠道",
+            "required": true
+          }
+        ],
+        "templateArgs": []
+      },
+      {
+        "description": "带数据的返回数据",
+        "name": "DataTransOutput",
+        "properties": [
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "OutputParameterVo",
+              "isDefsType": true,
+              "templateIndex": 0,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "data",
+            "description": "返回数据",
+            "required": false
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "number",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "transCode",
+            "description": "错误码。\n100000 成功\n200000 入参不合法\n400000 权限不足\n500000 服务失败",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "transMessage",
+            "description": "错误信息。成功：“成功” 失败：“失败对应的msg”",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "transMessageDetail",
+            "description": "信息详情”",
+            "required": true
+          }
+        ],
+        "templateArgs": [
+          {
+            "typeArgs": [],
+            "typeName": "OutputParameterVo",
+            "isDefsType": true,
+            "templateIndex": -1,
+            "compileTemplateKeyword": "#/definitions/",
+            "enum": []
+          }
+        ]
+      },
+      {
+        "name": "GenericRequestParameterToken",
+        "properties": [
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "OutputParameterVo",
+              "isDefsType": true,
+              "templateIndex": 0,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "bizParamVo",
+            "required": false
+          }
+        ],
+        "templateArgs": [
+          {
+            "typeArgs": [],
+            "typeName": "OutputParameterVo",
+            "isDefsType": true,
+            "templateIndex": -1,
+            "compileTemplateKeyword": "#/definitions/",
+            "enum": []
+          }
+        ]
+      },
+      {
+        "name": "InquiringRepaymentUnresolvedRepaymentInformationAO",
+        "properties": [
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "assetInfoStatus",
+            "description": "进件状态,eg:正常还款->PROCESSING、逾期->OVER_DUE、结清->REPAID（包含提前结清,逾期结清和正常结清）",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "assetRepayPlanStatus",
+            "required": false
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "dueDate",
+            "description": "账单日：格式 yyyy-MM-dd HH:mm:ss",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "number",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "pageNum",
+            "description": "当前第几页，从1开始",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "number",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "pageSize",
+            "description": "每页多少行",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "requestType",
+            "description": "渠道大类,eg:个贷输入->LEND,钱站输入->JA",
+            "required": true
+          }
+        ],
+        "templateArgs": []
+      },
+      {
+        "name": "OutputParameterVo",
+        "properties": [
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "dueDay",
+            "description": "开卡日",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "requestChannel",
+            "description": "进件渠道",
+            "required": true
+          }
+        ],
+        "templateArgs": []
+      },
+      {
+        "name": "QueryParameter",
+        "properties": [
+          {
+            "dataType": {
+              "typeArgs": [
+                {
+                  "typeArgs": [],
+                  "typeName": "",
+                  "isDefsType": false,
+                  "templateIndex": -1,
+                  "compileTemplateKeyword": "#/definitions/",
+                  "enum": []
+                },
+                {
+                  "typeArgs": [],
+                  "typeName": "DataTransOutput",
+                  "isDefsType": true,
+                  "templateIndex": -1,
+                  "compileTemplateKeyword": "#/definitions/",
+                  "enum": []
+                }
+              ],
+              "typeName": "ObjectMap",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "data",
+            "required": false
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "dueDay",
+            "description": "开卡日",
+            "required": true
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "requestChannel",
+            "description": "进件渠道",
+            "required": true
+          }
+        ],
+        "templateArgs": []
+      },
+      {
+        "name": "Result",
+        "properties": [
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "string",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "description",
+            "required": false
+          },
+          {
+            "dataType": {
+              "typeArgs": [
+                {
+                  "typeArgs": [],
+                  "typeName": "ObjectMap",
+                  "isDefsType": false,
+                  "templateIndex": -1,
+                  "compileTemplateKeyword": "#/definitions/",
+                  "enum": []
+                }
+              ],
+              "typeName": "Array",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "result",
+            "required": false
+          },
+          {
+            "dataType": {
+              "typeArgs": [],
+              "typeName": "number",
+              "isDefsType": false,
+              "templateIndex": -1,
+              "compileTemplateKeyword": "#/definitions/",
+              "enum": []
+            },
+            "name": "returnCode",
+            "required": false
+          }
+        ],
+        "templateArgs": [
+          {
+            "typeArgs": [
+              {
+                "typeArgs": [],
+                "typeName": "ObjectMap",
+                "isDefsType": false,
+                "templateIndex": -1,
+                "compileTemplateKeyword": "#/definitions/",
+                "enum": []
+              }
+            ],
+            "typeName": "Array",
+            "isDefsType": false,
+            "templateIndex": -1,
+            "compileTemplateKeyword": "#/definitions/",
+            "enum": []
+          }
+        ]
+      },
+      {
+        "name": "mod_Service",
+        "properties": [],
+        "templateArgs": []
+      }
+    ]
+  }
+]
